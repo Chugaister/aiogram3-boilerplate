@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "aiogram3-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Chugaister <dmytroshvahyliak@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyngrok = "^7.2.0"
+aiogram = "^3.13.1"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+aiohttp = "^3.10.6"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 88
+exclude = ["__pycache__", ".git", "build", "dist"]
